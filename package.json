@@ -1,0 +1,23 @@
+{
+  "name": "svg-icon-kit",
+  "version": "0.0.0",
+  "description": "\"Get svg icons\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tetiana Korshunova",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkorshunova/svg-icon-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tkorshunova/svg-icon-kit/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "react"
+  ]
+}
