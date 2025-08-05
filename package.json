@@ -2,9 +2,15 @@
   "name": "svg-icon-kit",
   "version": "0.0.0",
   "description": "\"Get svg icons\"",
-  "main": "index.js",
+  "main": "react/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "export": "figma-export use-config figma.config.mjs",
+    "clean": "rimraf outline solid react src package *.tgz",
+    "test": "node test.js",
+    "np": "np",
+    "release": "run-s build np",
+    "bundle": "rollup --config",
+    "build": "run-s clean export bundle"
   },
   "author": "Tetiana Korshunova",
   "license": "MIT",
@@ -19,5 +25,28 @@
     "icons",
     "svg",
     "react"
-  ]
+  ],
+  "files": [
+    "outline/",
+    "solid/",
+    "react/"
+  ],
+  "devDependencies": {
+    "@figma-export/cli": "^6.2.0",
+    "@figma-export/output-components-as-svg": "^6.2.0",
+    "@figma-export/output-components-as-svgr": "^6.2.2",
+    "@figma-export/transform-svg-with-svgo": "^6.2.1",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/react": "^19.1.9",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^19.1.1",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.46.2",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  }
 }

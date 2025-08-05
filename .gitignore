@@ -6,6 +6,8 @@
 # build
 /outline
 /solid
+/react
+/src
 
 # misc
 .DS_Store
